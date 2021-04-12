@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS arrays.js"></script>
+    <title>Arrays in JS</title>
+</head>
+<body>
+    <h1>Arrays in JavaScript</h1>
+    <br>
+
+    <h2>Looping array via for loop</h2>
+    <p id="a"></p>
+    <button type="button" onclick="loop()">Click here to display looping through array</button>
+    <br>
+
+    <h2>Looping array via ForEach()</h2>
+    <p id="b"></p>
+    <script>
+    var nums,txt;
+    nums=[5,48,98,62,51,33];
+    txt="<ul>"
+    nums.forEach(func);
+    txt+="</ul>"
+    document.getElementById('b').innerHTML=txt;
+
+    function func(value){
+        txt+="<li>"+value+"</li>";
+    }
+    </script>
+    <br>
+
+    <h2>Looping array via ForEach() again</h2>
+    <p id="c"></p>
+    <script>
+        var text="";
+        var array=[4,9,88,74,65,45];
+        array.forEach(loopFunc);
+        document.getElementById('c').innerHTML=text;
+        function loopFunc(value){
+            text=text+value+"<br>"
+        }
+    </script>
+
+    
+</body>
+</html>
