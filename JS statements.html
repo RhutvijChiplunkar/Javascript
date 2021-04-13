@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS statements.js"></script>
+    <title>JS statements/syntax</title>
+</head>
+<body>
+    <h1 id="a"></h1>
+    <script>
+        var x,y,z;
+        x=10;
+        y=20;
+        z=x+y;
+        document.getElementById('a').innerHTML=z;
+    </script>
+
+    <h2 id="b"></h2>
+    <script>
+        document.getElementById("b").innerHTML="Hello programmers";
+    </script>
+
+    <h2 id="c"></h2>
+    <script>
+        var x="JavaScript"
+        document.getElementById('c').innerHTML=x;
+    </script>
+
+    <h3 id="d"></h3>
+    <h3 id="e"></h3>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+    <script>
+        function myFunction(){
+        document.getElementById('d').innerHTML="Welcome";
+        document.getElementById('e').innerHTML="India";
+        }
+    </script>
+
+    <!--
+    JavaScript Values
+    The JavaScript syntax defines two types of values:
+
+    Fixed values
+    Variable values
+    Fixed values are called Literals.
+    Variable values are called Variables.
+
+    Hyphens are not allowed in JavaScript. They are reserved for subtractions.
+    -->
+    <h1 id="f"></h1>
+    <button type="button" onclick="variables()">Click here</button>
+
+    <h1 id="g"></h1>
+    <button type="button" onclick="VAR()">VAR functioning</button>
+    <h1 id="h"></h1>
+    <button type="button" onclick="LET()">LET functioning</button>
+    <h1 id="i"></h1>
+    <button type="button" onclick="CONST()">CONST functioning</button>
+    
+</body>
+</html>
