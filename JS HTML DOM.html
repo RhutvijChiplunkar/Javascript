@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS HTML DOM.js"></script>
+    <title>JS HTML DOM</title>
+</head>
+<body>
+    <h1> header 1 tag</h1>
+    <p>para 1 tag</p>
+    <h1> header 1 tag</h1>
+
+    <h2 class="Head2"></h2>
+
+    <p class="para">abc</p>
+    <p class="para">xyz</p>
+    <p id="a"></p>
+    <button type="button" onclick="fun()">Query selector all!!</button>
+    <br>
+    <br>
+    <!-- Changing the Value of an Attribute
+    document.getElementById(id).attribute = new value -->
+    <img id="image" src="loginBg.jpg" width="200" height="200">
+    <script>
+        document.getElementById('image').src="forest.jpg";
+    </script>
+
+    <h1 onclick="this.innerHTML='Changed on click'">Click here!!!</h1>
+    <h2 id="x">Click me!!!!</h2>
+    <hr>    
+
+    Enter your name: <input type="text" id="fname" onchange="myFunction()">
+    <hr>
+
+    <div style="background: chartreuse; color: cornsilk;" onmouseover="mOver(this)" onmouseout="mOut(this)" >
+        <h2>Mouse over me</h2>
+    </div>
+</body>
+</html>
