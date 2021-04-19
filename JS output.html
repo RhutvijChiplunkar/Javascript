@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS OUTPUT</title>
+</head>
+<body>
+    <h1>Output using inner HTML</h1>
+    <h2 id='a'></h2>
+    <script>
+        document.getElementById("a").innerHTML=10+20;       //op is 30
+    </script>
+
+    <h1>Output using document.write()</h1>
+    <script>
+        document.write(20+65);                  //op is 85
+    </script>
+
+    <!--Using document.write() after an HTML document is loaded, will delete all existing HTML:
+    <button type="button" onclick="document.write('abc')">click</button>
+    -->
+
+    <h1>Output using window.alert()</h1>
+    <script>
+        window.alert(20+30);                  //op is 50 as alert
+        alert(20+20);                         //window can be skipped and op is 40 as alert
+    </script>
+    <hr>
+
+    <h1>Output using console.log()</h1>
+    <h3>Please open console(F12)</h3>
+    <!--One must open console (F12) to view output-->
+    <script>
+        console.log(50+26);
+        console.error("This is an error");      //error statement
+        console.warn("This is a warning");      //warning statement
+    </script>
+    <hr>
+
+    <!--JavaScript Print
+    JavaScript does not have any print object or print methods.
+    You cannot access output devices from JavaScript.
+    The only exception is that you can call the window.print() method in the browser to print 
+    the content of the current window.-->
+    
+    <h1>Output using window.print()</h1>
+    <button type="button" onclick="printFunc()">Click here to print page</button>
+    <script>
+        function printFunc(){
+            window.print();
+        }
+    </script>
+
+</body>
+</html>
